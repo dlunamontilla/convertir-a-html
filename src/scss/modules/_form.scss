@@ -1,0 +1,117 @@
+input,
+button {
+    min-height: 40px;
+}
+
+input,
+button,
+textarea {
+    background-color: transparent;
+    outline: 1px solid transparent;
+
+
+    &:not([class*="--"]) {
+        background-image: none;
+    }
+}
+
+[type="text"],
+[type="number"],
+[type="email"],
+[type="password"],
+[type="date"],
+textarea {
+    border: 1px solid;
+    font: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    border: 0;
+    font:inherit;
+    transition: 300ms ease;
+}
+
+.form {
+    min-height: 100%;
+
+    &-container {
+        margin: 0 auto;
+        transition: 300ms ease;
+        padding: 10px 20px;
+
+        @media screen and (min-width: 900px) {
+            min-width: 450px;
+            border: 1px solid rgba(white, 0.2);
+        }
+
+        @media screen and (max-width: 899px) {
+            width: 100%;
+        }
+    }
+
+    &__label {
+        display: block;
+        position: relative;
+
+        span,
+        textarea {
+            display: block;
+            color: inherit;
+            width: 100%;
+        }
+
+        span {
+            margin-bottom: 7px;
+        }
+
+        textarea {
+            padding: 10px;
+            min-height: 150px;
+            border-color: rgba(white, 0.2);
+        }
+    }
+}
+
+
+.group-button {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(white, 0.1);
+    text-align: right;
+}
+
+.button {
+    --fondo: #{lighten($color-base, 10)};
+    --text-color: #{$text-color};
+
+    border-radius: 5px;
+    background-color: var(--fondo);
+    color: var(--text-color);
+    
+    &:not([class*="--"]) {
+        padding: 0 10px;
+    }
+
+    &:active {
+        transition: none;
+    }
+
+    &--primary {
+        $color: #0080d4;
+
+        background-color: darken($color, 20);
+        padding: 0 20px;
+
+        &:hover {
+            background-color:darken($color, 15);
+        }
+
+        &:active {
+            background-color: darken($color, 20);
+        }
+    }
+}
