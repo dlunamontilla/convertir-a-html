@@ -20,7 +20,7 @@ El resultado será una tabla HTML con los siguientes resultados:
 
 |Descripción del producto|Cantidad|Precio|
 |-|-|-|
-Vestidos largos | 10 | 4.166666666666667 |
+Vestidos largos | 10 | 5 |
 
 **Vista previa del ejemplo anterior**
 
