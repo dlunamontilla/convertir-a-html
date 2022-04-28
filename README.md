@@ -33,3 +33,7 @@ Veamos el siguiente ejemplo:
 [2]:https://i.ibb.co/YDW0G18/imagen.png "Segundo ejemplo"
 
 ![][2]
+
+Para ver su funcionamiento, [vaya a la aplicación][3].
+
+[3]:https://convertir-a-tabla-html.netlify.app/ "Convertidor de texto a tabla HTML"
